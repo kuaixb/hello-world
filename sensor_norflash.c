@@ -212,7 +212,7 @@ static __RETAINED_SRAM void mhs_xip_power_evt_handler(mhs_power_evt_t const *p_p
         {
         }
         break;
-        default:
+        default:            
         break;
     }
 }
@@ -220,3 +220,4 @@ static __RETAINED_SRAM void mhs_xip_power_evt_handler(mhs_power_evt_t const *p_p
 HAL_POWER_MGMT_OBSERVER(xip_observer, HAL_POWER_OBSERVER_PRIOR_XIP, mhs_xip_power_evt_handler, &sens_qspidev);
 
 #endif
+#add for branch test
